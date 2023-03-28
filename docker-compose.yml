@@ -6,6 +6,7 @@ services:
             - alistdata:/opt/alist/data
         ports:
             - '5244:5244'
+            - '6800:6800'
         environment:
             - PUID=0
             - PGID=0
