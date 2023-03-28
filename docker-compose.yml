@@ -3,7 +3,7 @@ services:
     alist:
         restart: always
         volumes:
-            - '/etc/alist:/opt/alist/data'
+            - test:/opt/alist/data
         ports:
             - '5244:5244'
         environment:
@@ -11,4 +11,4 @@ services:
             - PGID=0
             - UMASK=022
         container_name: alist
-        image: 'xhofe/alist:latest'
+        image: 'xhofe/alist-aria2:latest'
