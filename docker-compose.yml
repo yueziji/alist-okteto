@@ -14,4 +14,4 @@ services:
         image: 'xhofe/alist-aria2:latest'
 volumes:
     alistdata:
-        size:100M
+        size: 100M
