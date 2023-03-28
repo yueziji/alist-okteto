@@ -3,7 +3,7 @@ services:
     alist:
         restart: always
         volumes:
-            - /opt/alist/data
+            - alistdata:/opt/alist/data
         ports:
             - '5244:5244'
         environment:
@@ -12,3 +12,6 @@ services:
             - UMASK=022
         container_name: alist
         image: 'xhofe/alist-aria2:latest'
+volumes:
+    alistdata:
+        size:100M
